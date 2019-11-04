@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Practice site with Bootstrap 4, Font Awesome ,jQuery and AOS.js">
+	<meta name="author" content="Nikola">
+	<meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap 4, Font Awesome, jQuery, AOS.js">
+	<title>Home page with Bootstrap 4</title>
+
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+	<link rel="stylesheet" href="node_modules/aos/dist/aos.css">
+	<link rel="stylesheet" type="text/css" href="public/css/style.min.css">
+
+</head>
+<body>
+
+	<!-- navbar start -->
+
+	<div class="navbar-container">
+		<nav id="navbar" class="navbar fixed-top navbar-expand-sm navbar-dark border-bottom border-info">
+			<div class="container">
+  			<a class="navbar-brand font-weight-bold text-info" href="javascript:void(0)"><i class="fas fa-car fa-2x"></i></a>
+  			<button id="navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  			</button>
+
+  			<div class="collapse navbar-collapse justify-content-end" id="navbarLinks">
+    			<ul class="navbar-nav">
+      			<li class="nav-item">
+      			  <a class="nav-link" href="javascript:void(0)">Models</a>
+      			</li>
+      			<li class="nav-item">
+      	  		<a class="nav-link" href="javascript:void(0)">Customization</a>
+      			</li>
+      			<li class="nav-item">
+      	  		<a class="nav-link" href="javascript:void(0)">Service</a>
+      			</li>
+      			<li class="nav-item">
+      	  		<a class="nav-link" href="javascript:void(0)">Support</a>
+      			</li>
+    			</ul>
+    			<a id="buy-now-link" class="btn d-block text-info bg-white mt-3 mt-sm-0 ml-sm-3" href="javascript:void(0)">Buy Now</a>
+  			</div>
+  		</div>
+		</nav>
+	</div>
+
+	<!-- navbar end -->
+
+	<!-- main info start -->
+
+	<div class="main-info text-light min-vh-100 o-hidden d-flex flex-column justify-content-center">
+		<div class="container">
+			<div class="row text-center justify-content-center align-item-center">
+				<div class="col-12 col-xl-8 pb-4" data-aos="fade-up" data-aos-delay="500" data-aos-once="true">
+					<h1 id="main-heading" class="display-2 mb-5">
+						It's all about cars, with rechargeable batteries.
+					</h1>
+					<div class="mb-5">
+						<p class="lead">Top performance, significant reduction of local air pollution and low cost of maintenance.</p>
+					</div>
+					<a id="explore-models" class="btn btn-lg text-dark bg-light explore-models" href="javascript:void(0)">Explore Models</a>
+				</div>
+			</div>
+		</div>
+		<div class="divider">
+    	<svg id="main-divider" width="100%" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+    		<path d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z" fill="#fff"></path>
+			</svg>
+  	</div>
+	</div>
+
+	<!-- main info end -->
+
+	<!-- features start -->
+
+	<div class="text-center p-5 my-sm-3 my-md-5">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-9">
+					<h2 class="h1 font-weight-bold">
+						Explore the world of electric cars, get known with some of amazing features.
+					</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="mb-5">
+		<div class="container">
+			<div class="row" data-aos="fade-up" data-aos-once="true">
+				<div class="col-md-6 mb-4 mb-md-0">
+					<div class="row justify-content-center">
+						<div class="col-12 col-lg-10">
+							<a class="f-link d-block rounded-large" href="javascript:void(0)">
+								<img class="img-fluid rounded-large" src="public/images/charging.jpg" alt="Charging">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-11 col-lg-10">
+							<a href="javascript:void(0)">
+								<h3 class="h2 text-info font-weight-bold mb-3">
+									Economics
+								</h3>
+							</a>
+							<p class="lead">Electric cars are less expensive to run than comparable internal combustion engine cars, due to the lower cost of maintenance and energy.</p>
+							<p class="lead">The average operating cost of an electric vehicle per year is three time less than internal combustion cars.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="mb-5">
+		<div class="container">
+			<div class="row" data-aos="fade-up" data-aos-once="true">
+				<div class="col-md-6 mb-4 mb-md-0">
+					<div class="row justify-content-center">
+						<div class="col-12 col-lg-10">
+							<a class="f-link d-block rounded-large" href="javascript:void(0)">
+								<img class="img-fluid rounded-large" src="public/images/forest.jpg" alt="Forest">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-11 col-lg-10">
+							<a href="javascript:void(0)">
+								<h3 class="h2 text-info font-weight-bold mb-3">
+									Environmental aspects
+								</h3>
+							</a>
+							<p class="lead">Electric cars have significant reduction of local air pollution over the internal combustion engine cars, as they do not directly emit pollutants.</p>
+							<p class="lead">Reduce dependence of petroleum, and also reduce CO<sub>2</sub> and other greenhouse gas emissions.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="mb-5">
+		<div class="container">
+			<div class="row" data-aos="fade-up" data-aos-once="true">
+				<div class="col-md-6 mb-4 mb-md-0">
+					<div class="row justify-content-center">
+						<div class="col-12 col-lg-10">
+							<a class="f-link d-block rounded-large" href="javascript:void(0)">
+								<img class="img-fluid rounded-large" src="public/images/speed.jpg" alt="Speed">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-11 col-lg-10">
+							<a href="javascript:void(0)">
+								<h3 class="h2 text-info font-weight-bold mb-3">
+									Performance
+								</h3>
+							</a>
+							<p class="lead">Electric motors provide high power-to-weight ratios, and have flat torque curve down to zero speed.</p>
+							<p class="lead">High acceleration due to reduced drivetrain friction losses, and  can also use a direct motor-to-wheel configuration which increases the available power.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="mb-5">
+		<div class="container">
+			<div class="row" data-aos="fade-up" data-aos-once="true">
+				<div class="col-md-6 mb-4 mb-md-0">
+					<div class="row justify-content-center">
+						<div class="col-12 col-lg-10">
+							<a class="f-link d-block rounded-large" href="javascript:void(0)">
+								<img class="img-fluid rounded-large" src="public/images/regenerative.jpg" alt="Regenerative">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-11 col-lg-10">
+							<a href="javascript:void(0)">
+								<h3 class="h2 text-info font-weight-bold mb-3">
+									Energy efficiency
+								</h3>
+							</a>
+							<p class="lead">Electric motors are more efficient than internal combustion engines in converting stored energy into driving a vehicle, up to 4 time.</p>
+							<p class="lead">Regenerative braking can recover as much as one fifth of the energy normally lost during braking.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- features end -->
+
+	<!-- bateries start -->
+
+	<div class="main-bateries o-hidden d-flex flex-column justify-content-center">
+		<div class="container py-5 mb-0 mb-sm-5">
+			<div class="row text-center justify-content-center pt-0 pt-sm-5">
+				<div class="col-md-10 col-xl-8 mb-3 mb-sm-5">
+					<h2 class="purple h1 font-weight-bold mb-3 mb-md-4">
+						Powerful lithium-based batteries
+					</h2>
+					<p class="lead mb-3 mb-md-4">Lithium-based batteries are used for their high power and energy density, giving outstanding range to all our models.</p>
+				</div>
+			</div>
+			<div class="row mb-0 mb-sm-5">
+				<div class="col-12 col-md-6 col-lg-4 mb-3" data-aos="zoom-in" data-aos-once="true">
+					<div class="row">
+						<div class="col-2 px-0 d-flex justify-content-end">
+							<h4><i class="fas fa-home fa-fw"></i></h4>
+						</div>
+						<div class="col-10">
+							<h4 class="font-weight-bold">Home charging</h4>
+							<p>Charge your car from charging station installed in your home.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 mb-3" data-aos="zoom-in" data-aos-once="true">
+					<div class="row">
+						<div class="col-2 px-0 d-flex justify-content-end">
+							<h4><i class="fas fa-charging-station fa-fw"></i></h4>
+						</div>
+						<div class="col-10">
+							<h4 class="font-weight-bold">Public charging</h4>
+							<p>Public charging stations in businesses and public areas.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 mb-3" data-aos="zoom-in" data-aos-once="true">
+					<div class="row">
+						<div class="col-2 px-0 d-flex justify-content-end">
+							<h4><i class="fas fa-plug fa-fw"></i></h4>
+						</div>
+						<div class="col-10">
+							<h4 class="font-weight-bold">Universal plug-in</h4>
+							<p>Charge your car in every charging place with universal plug-in.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 mb-3" data-aos="zoom-in" data-aos-once="true">
+					<div class="row">
+						<div class="col-2 px-0 d-flex justify-content-end">
+							<h4><i class="fas fa-bolt fa-fw"></i></h4>
+						</div>
+						<div class="col-10">
+							<h4 class="font-weight-bold">Fast charging</h4>
+							<p>240 volt outlet, for fast charging, with 4 times more range than standard charger.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 mb-3" data-aos="zoom-in" data-aos-once="true">
+					<div class="row">
+						<div class="col-2 px-0 d-flex justify-content-end">
+							<h4><i class="fas fa-road fa-fw"></i></h4>
+						</div>
+						<div class="col-10">
+							<h4 class="font-weight-bold">Outstanding range</h4>
+							<p>Minimum 250+ km range, with single charge, for all our models.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 mb-3" data-aos="zoom-in" data-aos-once="true">
+					<div class="row">
+						<div class="col-2 px-0 d-flex justify-content-end">
+							<h4><i class="fas fa-car-battery fa-fw"></i></h4>
+						</div>
+						<div class="col-10">
+							<h4 class="font-weight-bold">Long lifespan</h4>
+							<p>Top quality building process, enables long life of our batteries.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row text-center justify-content-center">
+				<a class="h4 p-1 purple" href="javascript:void(0)">Read more...</a>
+			</div>
+		</div>
+		<div class="divider">
+    	<svg id="batteries-divider" width="100%" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+    		<path d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z" fill="#fff"></path>
+			</svg>
+  	</div>
+	</div>
+
+	<!-- bateries end -->
+
+	<!-- various data start -->
+
+	<div class="container pt-5 pb-3 mt-0 mt-sm-5">
+		<div class="row text-center">
+  	  <div class="col-lg-6 mb-3 mb-sm-5" data-aos="flip-left" data-aos-once="true" data-aos-duration="800">
+  	  	<h3 class="h2 pb-2 teal"><a class="teal" href="javascript:void(0)">Government incentives</a></h3>
+  	    <div class="row justify-content-center">
+  	    	<div class="col-lg-11">
+      			<p>Incentives include purchase rebates, tax exemptions and tax credits, and additional perks that range from access to bus lanes to waivers on fees (charging, parking, tolls, etc.). The amount usually depends on battery size.</p>
+      			<a class="btn text-light teal-bg rounded-circle link-rounded" href="javascript:void(0)"><i class="fas fa-tree fa-fw fa-2x"></i><span class="sr-only">Read more...</span></a>
+      		</div>
+      	</div>
+   		</div>
+   		<div class="col-lg-6 mb-3 mb-sm-5" data-aos="flip-right" data-aos-once="true" data-aos-duration="800">
+    		<h3 class="h2 pb-2 teal"><a class="teal" href="javascript:void(0)">Safety measures</a></h3>
+    	  <div class="row justify-content-center">
+    	  	<div class="col-lg-11">
+      			<p>Safety measuers are dealt by the international standard ISO 6469. Special attention is give to protection of persons against electrical hazards, minimize risk of fire, functional safety means and protection against failures.</p>
+      			<a class="btn text-light teal-bg rounded-circle link-rounded" href="javascript:void(0)"><i class="fas fa-car-crash fa-fw fa-2x"></i><span class="sr-only">Read more...</span></a>
+      		</div>
+      	</div>
+   		</div>
+   		<div class="col-lg-6 mb-3 mb-sm-5" data-aos="flip-left" data-aos-once="true" data-aos-duration="800">
+    		<h3 class="h2 pb-2 teal"><a class="teal" href="javascript:void(0)">Road assistence</a></h3>
+    	  <div class="row justify-content-center">
+    	  	<div class="col-lg-11">
+      			<p>Roadside assistance offer, charging trucks available to recharge electric cars in case of emergency. Plus standard 24h assistance in case of mechanical failures, or any other emergency.</p>
+      			<a class="btn text-light teal-bg rounded-circle link-rounded" href="javascript:void(0)"><i class="fas fa-truck-pickup fa-fw fa-2x"></i><span class="sr-only">Read more...</span></a>
+      		</div>
+      	</div>
+   		</div>
+   		<div class="col-lg-6 mb-3 mb-sm-5" data-aos="flip-right" data-aos-once="true" data-aos-duration="800">
+    		<h3 class="h2 pb-2 teal"><a class="teal" href="javascript:void(0)">Special offer for taxi</a></h3>
+    	  <div class="row justify-content-center">
+    	  	<div class="col-lg-11">
+      			<p>Special offer for taxi drivers include excelent financial conditions, additional interior parts, discount on recommended service and special exterior branding offers.</p>
+      			<a class="btn text-light teal-bg rounded-circle link-rounded" href="javascript:void(0)"><i class="fas fa-taxi fa-fw fa-2x"></i><span class="sr-only">Read more...</span></a>
+      		</div>
+      	</div>
+   		</div>
+  	</div>
+	</div>
+
+	<!-- various data end -->
+
+	<!-- FAQ start -->
+
+	<div class="faq">
+		<div class="faq-divider">
+    	<svg width="100%" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+    		<path d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z" fill="#6f42c1"></path>
+			</svg>
+  	</div>
+  	<div class="faq-bottom">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-9 col-xl-8 mb-5">
+						<h3 class="h2 text-light mt-5">Frequently Asked Questions</h3>
+						<div class="mt-5 mb-4">
+							<div class="card mb-3 card-sm card-body" data-aos="fade-up" data-aos-once="true">
+                <div class="faq-trigger d-flex justify-content-between align-item-center" data-target="#panel-1" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1">
+                  <span class="faq-trigger-text h5 pr-2 mb-0">How long electric cars last?</span>
+                	<span class="indigo d-flex align-items-center"><i class="fas fa-caret-down"></i></span>
+                </div>
+                <div class="collapse" id="panel-1">
+                  <div class="pt-3">
+                    <p> By default, electric cars last longer than fossil cars. Less moving parts and as a whole, less strain on components.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3 card-sm card-body" data-aos="fade-up" data-aos-once="true" data-aos-delay="50">
+                <div class="faq-trigger d-flex justify-content-between align-item-center" data-target="#panel-4" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-4">
+                  <span class="faq-trigger-text h5 pr-2 mb-0">How fast can electric cars go?</span>
+                	<span class="indigo d-flex align-items-center">
+                		<i class="fas fa-caret-down"></i>
+                	</span>
+                </div>
+                <div class="collapse" id="panel-4">
+                  <div class="pt-3">
+                    <p>Electric cars can go very fast. The instant torque provided by the electric motors can send them from 0 to 60mph (0-100km/h) in under 3 seconds.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3 card-sm card-body" data-aos="fade-up" data-aos-once="true" data-aos-delay="50">
+                <div class="faq-trigger d-flex justify-content-between align-item-center" data-target="#panel-2" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-2">
+                  <span class="faq-trigger-text h5 pr-2 mb-0">How long electric cars take to charge?</span>
+                	<span class="indigo d-flex align-items-center">
+                		<i class="fas fa-caret-down"></i>
+                	</span>
+                </div>
+                <div class="collapse" id="panel-2">
+                  <div class="pt-3">
+                    <p>This depends on a few factors. There are 3 levels of charging, from a 110, 220, or 440 volt system. And also, how big is your battery pack.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3 card-sm card-body" data-aos="fade-up" data-aos-once="true" data-aos-delay="50">
+                <div class="faq-trigger d-flex justify-content-between align-item-center" data-target="#panel-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-3">
+                  <span class="faq-trigger-text h5 pr-2 mb-0">Is home charger include in package with car?</span>
+                	<span class="indigo d-flex align-items-center">
+                		<i class="fas fa-caret-down"></i>
+                	</span>
+                </div>
+                <div class="collapse" id="panel-3">
+                  <div class="pt-3">
+                    <p>Yes. All our modles have home charger included in offer.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3 card-sm card-body" data-aos="fade-up" data-aos-once="true" data-aos-delay="50">
+                <div class="faq-trigger d-flex justify-content-between align-item-center" data-target="#panel-5" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-5">
+                  <span class="faq-trigger-text h5 pr-2 mb-0">How much cost to charge electric car at charging station?</span>
+                	<span class="indigo d-flex align-items-center">
+                		<i class="fas fa-caret-down"></i>
+                	</span>
+                </div>
+                <div class="collapse" id="panel-5">
+                  <div class="pt-3">
+                    <p>90% or more of level 2 chargers are absolutely free.  Level 3 chargers can sometimes be free, but often cost at least a few dollars (6$-10$ on average).</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3 card-sm card-body" data-aos="fade-up" data-aos-once="true" data-aos-delay="50">
+                <div class="faq-trigger d-flex justify-content-between align-item-center" data-target="#panel-6" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-6">
+                  <span class="faq-trigger-text h5 pr-2 mb-0">Why don't electric cars have solar panels?</span>
+                	<span class="indigo d-flex align-items-center">
+                		<i class="fas fa-caret-down"></i>
+                	</span>
+                </div>
+                <div class="collapse" id="panel-6">
+                  <div class="pt-3">
+                    <p>The simple answer to that is it would take FAR TOO LONG to fully charge to 100%. We are talking about days if not weeks to get a full charge. </p>
+                  </div>
+                </div>
+              </div>
+						</div>
+						<div class="text-light">
+              	Still have questions? <a class="faq-link font-weight-bold text-light" href="javascript:void(0)">Visit our support page.</a>
+              </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- FAQ end -->
+
+	<!-- subscribe start -->
+
+	<div class=" my-5">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8 text-center mt-5 mb-4" data-aos="zoom-in" data-aos-once="true">
+					<h4 class="h3 text-info mb-4"><b>Subscribe</b> to get news and best offers.</h4>
+					<form id="subscribe-form">
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-8 mb-2">
+                <input id="subscribe-email" class="form-control bg-dark text-light border-0" type="email" placeholder="Enter your email">
+              </div>
+              <div class="col-md-4 mb-2">
+                <button id="subscribe-send" type="submit" class="subscribe-send btn btn-block bg-info text-dark"><b>Subscribe</b></button>
+              </div>
+            </div>
+          </div>
+        	</form>
+        	<div id="subscribe-invalid" class="text-danger font-weight-bold subscribe-invalid">Please enter a valid email address.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- subscribe pop-up start -->
+
+	<div id="pop-up" class="pop-up d-none card border-danger pop-up">
+		<div class="card-header bg-danger text-light">
+			<h5 class="h4 d-inline-block mb-0 card-title">Thank you for subscribing</h5>
+			<span id="pop-up-close" role="button" class="d-inline-block float-right pop-up-close"><i class="fas fa-times fa-2x"></i><span class="sr-only">Close pop up window.</span></span>
+		</div>
+		<div class="card-body text-dark font-weight-bold">
+			<p class="card-text">You will receive latest news, events and best offers in your inbox.</p>
+			<p class="card-text">We'll never share your details.</p>
+			<p class="card-text">You can <a class="text-info" href="javascript:void(0)">unsubscribe</a> at any time.</p>
+		</div>
+	</div>
+
+	<!-- subscribe pop-up end -->
+
+	<!-- subscribe end -->
+
+	<!-- footer start -->
+
+	<div class="footer bg-dark pt-5">
+		<div class="container">
+			<div class="row my-5">
+				<div class="col">
+					<div class="card card-body border-0 p-5 bg-info text-light rounded-large newsletter">
+						<div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+							<div class="h3 text-center mb-md-8">
+								Enter the world of electric power
+							</div>
+							<a class="btn btn-lg text-info bg-light footer-explore" href="javascript:void(0)">Explore Models</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mb-3 text-light">
+				<div class="col-6 col-md-4 text-left text-sm-center p-0 pl-3 px-md-3  mb-3 mb-sm-0">
+					<h5 class="font-weight-bold mb-3">Navigate</h5>
+					<ul class="nav flex-column mr-3 mr-sm-0">
+						<li class="nav-item">
+      			  <a class="nav-link footer-nav-link pl-0 pl-sm-3" href="javascript:void(0)">Models</a>
+      			</li>
+      			<li class="nav-item">
+      	  		<a class="nav-link footer-nav-link pl-0 pl-sm-3" href="javascript:void(0)">Customization</a>
+      			</li>
+      			<li class="nav-item">
+      	  		<a class="nav-link footer-nav-link pl-0 pl-sm-3" href="javascript:void(0)">Service</a>
+      			</li>
+      			<li class="nav-item">
+      	  		<a class="nav-link footer-nav-link pl-0 pl-sm-3" href="javascript:void(0)">Support</a>
+      			</li>
+					</ul>
+				</div>
+				<div class="col-6 col-md-4 text-left text-sm-center p-0 px-md-3 mb-3 mb-sm-0">
+					<h5 class="font-weight-bold mb-3">Contact</h5>
+					<ul class="list-unstyled">
+						<li class="mb-3 d-flex justify-content-start justify-content-sm-center">
+							<span>
+								<i class="fas fa-map-marker-alt fa-fw"></i>
+							</span>
+							<div class="ml-1 ml-sm-3">
+								<span>123 Electric Avenue
+								<br>
+								Milan, IT
+								</span>
+							</div>
+						</li>
+						<li class="mb-3 d-flex justify-content-start justify-content-sm-center">
+							<span>
+								<i class="fas fa-phone fa-fw"></i>
+							</span>
+							<div class="ml-1 ml-sm-3">
+								<span>+381 012 345 6789</span>
+								<span class="d-block text-muted text-small">Mon - Fri  9am - 5pm</span>
+							</div>
+						</li>
+						<li class="mb-3 d-flex justify-content-start justify-content-sm-center">
+							<span>
+								<i class="fas fa-envelope fa-fw"></i>
+							</span>
+							<div class="ml-1 ml-sm-3">
+								<a class="footer-nav-link text-light" href="javascript:void(0)">electric@cars.it</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col-12 col-md-4 text-center">
+					<h5 class="font-weight-bold mb-3">Company</h5>
+					<ul class="nav flex-row flex-md-column">
+						<li class="nav-item col-6 col-md-12">
+      			  <a class="nav-link footer-nav-link" href="javascript:void(0)">About&nbsp;company</a>
+      			</li>
+      			<li class="nav-item col-6 col-md-12">
+      	  		<a class="nav-link footer-nav-link" href="javascript:void(0)">Careers</a>
+      			</li>
+      			<li class="nav-item col-6 col-md-12">
+      	  		<a class="nav-link footer-nav-link" href="javascript:void(0)">Terms</a>
+      			</li>
+      			<li class="nav-item col-6 col-md-12">
+      	  		<a class="nav-link footer-nav-link" href="javascript:void(0)">Privacy</a>
+      			</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row justify-content-center mb-2">
+				<div class="col-auto">
+					<ul class="nav">
+						<li class="nav-item">
+							<a class="d-block p-2 px-sm-3 py-sm-2 footer-nav-link" href="javascript:void(0)">
+								<i class="fab fa-instagram fa-2x"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="d-block p-2 px-sm-3 py-sm-2 footer-nav-link" href="javascript:void(0)">
+								<i class="fab fa-facebook-square fa-2x"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="d-block p-2 px-sm-3 py-sm-2 footer-nav-link" href="javascript:void(0)">
+								<i class="fab fa-youtube fa-2x"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="d-block p-2 px-sm-3 py-sm-2 footer-nav-link" href="javascript:void(0)">
+								<i class="fab fa-twitter fa-2x"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col col-md-auto text-center">
+					<span class="text-muted text-small">© 2019 Nikola. All rights reserved.</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer end -->
+
+	<!-- back to top start -->
+
+	<a class="back-to-top d-inline-block bg-danger text-light rounded-circle" href="#" data-aos="fade-up" data-aos-offset="2000" data-aos-once="false">
+		<i class="fas fa-arrow-up"></i>
+		<span class="sr-only">Go to top</span>
+	</a>
+
+	<!-- back to top end -->
+
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/aos/dist/aos.js"></script>
+  <script src="public/js/script.min.js"></script>
+</body>
+</html>

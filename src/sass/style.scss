@@ -1,0 +1,196 @@
+@import '../../node_modules/bootstrap/scss/_functions';
+@import '../../node_modules/bootstrap/scss/_variables';
+
+@mixin position-relative {
+	position: relative;
+}
+@mixin position-absolute {
+	position: absolute;
+}
+
+a:hover {
+	text-decoration: none;
+}
+a:focus, a:active {
+	outline: none !important;
+	box-shadow: none !important;
+}
+.main-info {
+	background-image: linear-gradient($gray-800, $cyan);
+	padding-top: 68.5px;
+	@include position-relative;
+}
+.divider {
+	width: 100%;
+	@include position-absolute;
+	bottom: -1px;
+}
+.divider {
+	svg {
+		height: 6vw;
+	}
+}
+.rounded-large {
+	border-radius: 10px !important;
+}
+// features
+.f-link:hover {
+	box-shadow: 7px 7px lighten($cyan, 25%);
+	transform: rotate(-1deg);
+	transition: all .1s linear;
+}
+// bateries
+.main-bateries {
+	background-color: $gray-200;
+	@include position-relative;
+}
+.purple {
+	color: $purple;
+}
+a.purple:hover {
+	color: darken($purple, 25%);
+}
+// various data
+.teal {
+	color: $teal;
+}
+a.teal:hover {
+	color: darken($teal, 15%);
+}
+.teal-bg {
+	background-color: $teal;
+}
+a.teal-bg {
+	color: $white !important;
+}
+a.teal-bg:hover {
+	color: $white !important;
+	box-shadow: 0 0 6px $black;
+}
+a.teal-bg:active {
+	color: $white !important;
+}
+.link-rounded {
+	padding:  9.25px 6px 9.25px 6px;
+}
+// faq
+.faq-bottom {
+	background-color: $purple;
+	@include position-relative;
+	top: -1px;
+}
+.faq-divider {
+	svg {
+		height: 6vw;
+	}
+}
+.purple-text {
+	color: $purple;
+	& i {
+		width: 10px;
+		height: 16px;
+	}
+}
+.faq-trigger {
+	cursor: pointer;
+	user-select: none;
+}
+.faq-trigger {
+	&:hover {
+		.faq-trigger-text {
+			color: $purple;
+		}
+	}
+}
+.faq-link {
+	&:hover {
+		text-decoration: underline;
+	}
+}
+// newsletter
+.newsletter {
+	background-color: $cyan;
+	background-image: linear-gradient(to right, $cyan, $teal);
+}
+.subscribe-send {
+	&:hover {
+		background-color: $gray-300 !important;
+	}
+}
+input[type="email"] {
+	&:focus {
+	box-shadow: none;
+	}
+	&::placeholder {
+		color: $gray-400;
+	}
+}
+.subscribe-invalid {
+	display: none;
+}
+// pop up
+.pop-up {
+	position: fixed;
+	width: 530px;
+	bottom: 100px;
+	left: 50%;
+	transform: translate(-50%, 0) scale(0);
+	z-index: 999;
+	transition: all .4s linear;
+	@media screen and (max-width: 576px) {
+		width: 100%;
+	}
+}
+.pop-up-in {
+	display: block !important;
+	visibility: hidden;
+}
+.pop-up-show {
+	visibility: visible;
+	transform: translate(-50%, 0) scale(1);
+}
+.shake {
+	animation: shake .5s;
+}
+@keyframes shake {
+  0% { transform: translate(-50.5%, 1px) rotate(0deg); }
+  10% { transform: translate(-49.5%, -2px) rotate(-1deg); }
+  20% { transform: translate(-49%, 0px) rotate(1deg); }
+  30% { transform: translate(-51%, 2px) rotate(0deg); }
+  40% { transform: translate(-50.5%, -1px) rotate(1deg); }
+  50% { transform: translate(-49.5%, 2px) rotate(-1deg); }
+  60% { transform: translate(-49%, 1px) rotate(0deg); }
+  70% { transform: translate(-51%, 1px) rotate(-1deg); }
+  80% { transform: translate(-49.5%, -1px) rotate(1deg); }
+  90% { transform: translate(-50.5%, 2px) rotate(0deg); }
+  100% { transform: translate(-50.5%, -2px) rotate(-1deg); }
+}
+.pop-up-close {
+	cursor: pointer;
+	&:hover {
+		color: $black;
+	}
+}
+
+// footer
+a.footer-explore {
+	&:hover {
+		color: $gray-100 !important;
+		background-color: $gray-800 !important;
+	}
+}
+.footer-nav-link {
+	color: $gray-500;
+	transition: color .3s linear;
+	&:hover {
+		color: $gray-100;
+	}
+}
+// back to top
+.back-to-top {
+	padding: 7px 12px 7px 12px;
+	position: fixed;
+	z-index: 999;
+	bottom: 25px;
+	right: 25px;
+}
