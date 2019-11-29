@@ -1,14 +1,15 @@
+// AOS init
+AOS.init();
+// jQuery
 $(document).ready(function() {
 	// add background to navbar & remove border
 	var $navbar = $('#navbar');
 	// style navbar based on position
 	function navbarStyle() {
 		if($(window).scrollTop() > 0) {
-			$navbar.removeClass('border-bottom border-info');
-			$navbar.addClass('bg-dark');
+			$navbar.removeClass('border-bottom border-info').addClass('bg-dark');
 		} else {
-			$navbar.addClass('border-bottom border-info');
-			$navbar.removeClass('bg-dark');
+			$navbar.addClass('border-bottom border-info').removeClass('bg-dark');
 		}
 	}
 	navbarStyle();
@@ -34,17 +35,23 @@ $(document).ready(function() {
 	// resize headings based on window width
 	function resizeHeading() {
 		var $mainHeading = $('#main-heading');
+		var $comingSoonText =$('#cs-text');
 		if( $(window).width() < 576 ) {
-			$mainHeading.removeClass('display-2 display-3');
-			$mainHeading.addClass('display-4');
+			// main heading
+			$mainHeading.removeClass('display-2 display-3').addClass('display-4');
+			// coming soon text
+			$comingSoonText.removeClass('display-3').addClass('display-4');
 		}
+		// coming soon text
+		if( $(window).width() > 576 ) {
+			$comingSoonText.removeClass('display-4').addClass('display-3');
+		}
+		// main heading
 		if( $(window).width() > 576 && $(window).width() < 768 ) {
-			$mainHeading.removeClass('display-2 display-4');
-			$mainHeading.addClass('display-3');
+			$mainHeading.removeClass('display-2 display-4').addClass('display-3');
 		}
 		if( $(window).width() >= 768) {
-			$mainHeading.removeClass('display-3 display-4');
-			$mainHeading.addClass('display-2');
+			$mainHeading.removeClass('display-3 display-4').addClass('display-2');
 		}
 	}
 	resizeHeading();
@@ -52,8 +59,6 @@ $(document).ready(function() {
 	$(window).resize(function() {
 		resizeHeading();
 	});
-	// AOS init
-	AOS.init();
 	// explore hover opacity
 	$('#explore-models').hover(
 		function() {

@@ -7,13 +7,16 @@
 @mixin position-absolute {
 	position: absolute;
 }
-
+// remove default bootstrap rules
 a:hover {
 	text-decoration: none;
 }
 a:focus, a:active {
 	outline: none !important;
 	box-shadow: none !important;
+}
+.btn:focus {
+  box-shadow: none !important;
 }
 .main-info {
 	background-image: linear-gradient($gray-800, $cyan);
@@ -49,6 +52,41 @@ a:focus, a:active {
 }
 a.purple:hover {
 	color: darken($purple, 25%);
+}
+// coming soon
+.cs-container {
+	height: 700px;
+	@include position-relative;
+	overflow: hidden;
+	@media screen and (max-width: 576px) {
+		height: 500px;
+	}
+}
+.cs-divider {
+	@include position-relative;
+}
+.cs-divider {
+	svg {
+		@include position-absolute;
+		top: 0;
+		height: 6vw;
+		z-index: 99;
+	}
+}
+.cs-background {
+	height: 100%;
+	background-color: #000;
+	background-image: url('../images/mt-medium.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	filter: blur(4px);
+}
+.cs-text {
+	@include position-absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 // various data
 .teal {
@@ -115,6 +153,9 @@ a.teal-bg:active {
 .subscribe-send {
 	&:hover {
 		background-color: $gray-300 !important;
+	}
+	&:active {
+		transform: translate(0, 4px);
 	}
 }
 input[type="email"] {
