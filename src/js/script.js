@@ -69,10 +69,11 @@ $(document).ready(function() {
 		$(this).children().eq(1).children().first().toggleClass('fa-caret-down fa-caret-up');
 	});
 	// subscribe form validate
+	var hide;
 	$('#subscribe-send').click(function(e) {
 		e.preventDefault();
 		if(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test($('#subscribe-email').val())) {
-			var hide;
+
 			$('#pop-up').addClass(function() {
 				var $popUp = $('#pop-up');
 				// show pop up
@@ -100,9 +101,11 @@ $(document).ready(function() {
 	});
 	// manually close pop up
 	$('#pop-up-close').click(function() {
-			$('#pop-up').removeClass('pop-up-in pop-up-show shake');
+		$('#pop-up').removeClass('pop-up-in pop-up-show shake');
+		if(hide) {
 			clearTimeout(hide);
-		});
+		}
+	});
 
 	// back to top
 	$('.back-to-top').click(function(e) {

@@ -125,6 +125,9 @@ input[type="email"] {
 		color: $gray-400;
 	}
 }
+.invalid-container {
+	height: 24px;
+}
 .subscribe-invalid {
 	display: none;
 }
