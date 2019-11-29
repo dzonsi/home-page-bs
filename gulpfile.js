@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     minify = require('gulp-minify'),
     sass = require('gulp-sass'),
+    imagemin = require('gulp-imagemin'),
     browserSync = require('browser-sync').create();
 
 function css() {
@@ -43,6 +44,7 @@ function js() {
 }
 function images() {
     return gulp.src('./src/images/*.{png,jpg,jpeg}')
+      .pipe(imagemin())
       .pipe(gulp.dest('./public/images/'));
 }
 function icons() {
